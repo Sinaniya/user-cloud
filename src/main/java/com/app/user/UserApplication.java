@@ -1,5 +1,6 @@
 package com.app.user;
 
+import com.app.user.services.misc.IdUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
@@ -28,5 +29,6 @@ public class UserApplication implements CommandLineRunner {
         //ResponseEntity<String> response = restTemplate.getForEntity("http://users/api/v1/dummies/", String.class);
         //System.out.println(response.getBody());
         System.out.println(server);
+        System.out.println(IdUtil.getId());
     }
 }

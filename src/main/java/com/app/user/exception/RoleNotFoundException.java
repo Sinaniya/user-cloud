@@ -1,4 +1,4 @@
 package com.app.user.exception;
 
-public class RoleNotFoundException {
+public class RoleNotFoundException extends RuntimeException{
 }
